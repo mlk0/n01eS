@@ -1,0 +1,73 @@
+install git for windows
+http://msysgit.github.io/
+
+set basic configuration
+http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+check the configuration set
+git config --list
+
+
+authentication to git with clonning a remote repository
+https://github.com/mlk0/tProj.git
+git clone https://github.com/mlk0/tProj.git
+
+
+adding a new file
+git add -A
+
+commiting
+git commit -m 'the comment'
+
+pushing the changes
+git push origin branchName
+
+getting the changes
+git pull origin branchName
+
+merging 2 banches
+git merge theOtherBranch
+	- the command is issued out of the destination branch and in it will be merged theOtherBranch
+
+rebasing 2 branchs
+git rebase origin master
+	- the current branch is rebased with the content that is comeing with master
+
+
+initialize a new repo in a folder where he project is stored
+git init
+
+create a remote repository for the locally created repository
+git remote add origin https://github.com/mlk0/MyAwesomePreciousConsoleApp.git
+git remote add origin https://github.com/mlk0/MyAwesomeConsole.git
+git remote add origin http://me@myrepo/my/repo.git
+git remote add origin  https://github.com/mlk0/MyMVC.git
+git remote add origin  https://github.com/mlk0/MyMvc.git
+
+
+configure git to ignore bin or other files - nuget packages
+when navigated to the folder, issue the command
+touch .gitignore
+that will create an empty file
+Than, paste the official content for the .gitignore file for c# projects from 
+http://stackoverflow.com/questions/2143956/gitignore-for-visual-studio-projects-and-solutions
+
+# Revert changes to modified files.
+git reset --hard
+
+# Remove all untracked files and directories.
+git clean -fd
+
+
+# remove local repository
+rm -rf .git
+	deletes the .git folder
+
+git push -u origin master
+
+
+
+
+15 min git ->	https://try.github.io/levels/1/challenges/1
