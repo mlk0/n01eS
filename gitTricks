@@ -33,7 +33,7 @@ git merge theOtherBranch
 
 rebasing 2 branchs
 git rebase origin master
-	- the current branch is rebased with the content that is comeing with master
+	- the current branch is rebased with the content that is coming from master
 
 
 initialize a new repo in a folder where he project is stored
